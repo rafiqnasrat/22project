@@ -1,0 +1,29 @@
+<ul class="user-list">
+  <li>
+    <article class="user-list">
+        <div class="username">
+            <a>Recipes for: {{user}}</a>
+        </div>
+{{!-- Note for Scott: Took the username out of the loop to prevent the username from looping --}}
+        {{#each recipes as |recipe|}}
+        <div class="title">
+            <a>Recipe Title: {{recipe.title}}</a>
+        </div>
+        <div class="description">
+            <a>Description: {{recipe.description}}</a>
+        </div>
+        <div class="ingredients">
+            <a>Ingredients: {{recipe.ingredients}}</a>
+        </div>
+        <div class="instructions">
+            <a>Instructions: {{recipe.instructions}}</a>
+        </div>
+        <div class="time">
+            <a>Time: {{recipe.time}}</a>
+        </div>
+{{!-- Note for Scott: added a break in between recipes --}} 
+        <br> 
+    </article>
+  </li>
+  {{/each}}
+</ul>

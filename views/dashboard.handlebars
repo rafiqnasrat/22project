@@ -1,0 +1,78 @@
+{{#if recipes.length}}
+<section>
+  <h2>All Recipes</h2>
+  <ol>
+    {{#each recipes as |recipe|}}
+    <li>
+        <div class="title">
+            <a>Recipe Title: {{recipe.title}}</a>
+        </div>
+        <div class="description">
+            <a>Description: {{recipe.description}}</a>
+        </div>
+        <div class="ingredients">
+            <a>Ingredients: {{recipe.ingredients}}</a>
+        </div>
+        <div class="instructions">
+            <a>Instructions: {{recipe.instructions}}</a>
+        </div>
+        <div class="time">
+            <a>Time: {{recipe.time}}</a>
+        </div>
+        <div>
+          <p>Recipe by: {{recipe.username}}</p>
+        </div>
+      
+    </li>
+    {{/each}}
+  </ol>
+</section>
+{{/if}}
+
+{{!-- SEARCH FORM FOR FUTURE DEVELOPMENT
+<form class="choose_recipe">
+  <div class="category">
+  <label for="recipe_category">Choose Category:</label>
+  <select name="category" id="category">
+      {{#each categories as |category|}}
+      <option value="{{category.category_name}}">{{category.category_name}}</option>
+        {{/each}}
+  </select>
+</div>
+  <div class="diet">
+    <label for="diet_restrict">Select All That Apply:</label><br>
+    {{#each diets as |diet|}}
+    <input type="checkbox" id="{{diet.diet_name}}" name="diet_restrict" value="{{diet.diet_name}}">
+    <label for="{{diet.diet_name}}">{{diet.diet_name}}</label><br>
+    {{/each}}
+  </div>
+  <div class="addBtn">
+      <button type="submit">Find Recipe</button>
+  </div>
+</form>
+
+<article class="postTitle">
+  <div class="title">
+    <a>Recipe Name:{{title}}</a>
+  </div>  
+</article>
+
+<article class="postRecipe">
+  <div class="title">
+    <a>Recipe Name:{{title}}</a>
+  </div> 
+  <div class="time">
+    <a>Total Time:{{time}}</a>
+  </div> 
+   <div class="description">
+    <a>Description:{{description}}</a>
+  </div> 
+   <div class="ingredients">
+    <a>Ingredients:{{ingredients}}</a>
+  </div> 
+   <div class="instructions">
+    <a>Instructions:{{instructions}}</a>
+  </div>  
+</article>
+--}}
+

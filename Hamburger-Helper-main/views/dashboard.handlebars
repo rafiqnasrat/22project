@@ -1,0 +1,91 @@
+<div class="form-wrapper">
+  <form class="choose_recipe">
+      <div class="category">
+        <div class="form-group">
+            <label for="recipe_category">Choose Category:</label>
+            <select name="category" id="category">
+                <option value="breakfast">Breakfast</option>
+                <option value="lunch">Lunch</option>
+                <option value="dinner">Dinner</option>
+                <option value="appetizer">Appetizer</option>
+                <option value="dessert">Dessert</option>
+            </select>
+        </div>
+    </div>
+    <div class="diet">
+      <div class="form-group">
+        <label for="diet_restrict"><strong>Select All That Apply:</strong></label>
+      </div>
+      <div class="form-group">
+        <input type="checkbox" id="none" name="diet_restrict" value="None" checked>
+        <label for="none">None</label>
+      </div>
+      <div class="form-group">
+        <input type="checkbox" id="vegetarian" name="diet_restrict" value="Vegetarian">
+        <label for="vegetarian">Vegetarian</label>
+      </div>
+      <div class="form-group">
+        <input type="checkbox" id="vegan" name="diet_restrict" value="Vegan">
+        <label for="none">Vegan</label>
+      </div>
+      <div class="form-group">
+        <input type="checkbox" id="peskitarian" name="diet_restrict" value="Peskitarian">
+        <label for="vegetarian">Peskitarian</label>
+      </div>
+      <div class="form-group">
+        <input type="checkbox" id="glutenfree" name="diet_restrict" value="Gluten Free">
+        <label for="glutenfree">Gluten Free</label>
+      </div>
+      <div class="form-group"> 
+        <input type="checkbox" id="dairyfree" name="diet_restrict" value="Dairy Free">
+        <label for="dairyfree">Dairy Free</label>
+      </div>
+      <div class="form-group">
+        <input type="checkbox" id="shellfishfree" name="diet_restrict" value="Shellfish Free">
+        <label for="shellfishfree">Shellfish Free</label>
+      </div>
+      <div class="form-group">
+        <input type="checkbox" id="kosher" name="diet_restrict" value="Kosher">
+        <label for="kosher">Kosher</label>
+      </div>
+    </div>
+    <div class="addBtn form-btn">
+        <button type="submit">Find Recipe</button>
+    </div>
+
+
+
+
+
+</form>
+</div>
+
+
+
+        <div class="title-recept">
+        <article class="postTitle">
+          <div class="title">
+            <a>Recipe Name:{{title}}</a>
+          </div>  
+        </article>
+        </div>
+
+          <div class="recipt-wrapper">
+        <article class="postRecipe">
+          <div class="title">
+            <a>Recipe Name:{{title}}</a>
+          </div> 
+          <div class="time">
+            <a>Total Time:{{time}}</a>
+          </div> 
+          <div class="description">
+            <a>Description:{{description}}</a>
+          </div> 
+          <div class="ingredients">
+            <a>Ingredients:{{ingredients}}</a>
+          </div> 
+          <div class="instructions">
+            <a>Instructions:{{instructions}}</a>
+          </div>  
+        </article>
+  </div>

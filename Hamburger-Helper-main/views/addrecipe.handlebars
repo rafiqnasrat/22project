@@ -1,0 +1,75 @@
+<div class="form-wrapper">
+    <form class="add-recipe">
+    <div class="title form-group">
+        <label for="recipe_title">Recipe Title:</label>
+        <input type="text" id="recipeTitle" />
+    </div>
+    <div class="desc form-group">
+        <label for="recipe_description">Recipe Description:</label>
+        <input type="text" id="recipeDescrip" />
+    </div>
+    <div class="ingred form-group">
+        <label for="recipe_ingredients">Ingredients:</label>
+        <input type="text" id="recipeIngred" />
+    </div>
+    <div class="instruct form-group">
+        <label for="recipe_instructions">Instructions:</label>
+        <input type="text" id="recipeInstruct" />
+    </div>
+    <div class="totaltime form-group">
+        <label for="recipe_time">Total Time:</label>
+        <input type="number" id="hoursTime" name="hoursTime" min="00" max="99">
+        <input type="number" id="minutesTime" name="minutesTime" min="00" max="59">
+    </div>
+    <div class="category form-group">
+        <label for="recipe_category">Choose Category:</label>
+        <select name="category" id="category">
+            <option value="breakfast">Breakfast</option>
+            <option value="lunch">Lunch</option>
+            <option value="dinner">Dinner</option>
+            <option value="appetizer">Appetizer</option>
+            <option value="dessert">Dessert</option>
+        </select>
+    </div>
+        <div class="diet">
+      <div class="form-group">
+        <label for="diet_restrict"><strong>Select All That Apply:</strong></label>
+      </div><br>
+      <div class="form-group">
+        <input type="checkbox" id="none" name="diet_restrict" value="None" checked>
+        <label for="none">None</label>
+      </div>
+      <div class="form-group">
+        <input type="checkbox" id="vegetarian" name="diet_restrict" value="Vegetarian">
+        <label for="vegetarian">Vegetarian</label>
+      </div>
+      <div class="form-group">
+        <input type="checkbox" id="vegan" name="diet_restrict" value="Vegan">
+        <label for="none">Vegan</label>
+      </div>
+      <div class="form-group">
+        <input type="checkbox" id="peskitarian" name="diet_restrict" value="Peskitarian">
+        <label for="vegetarian">Peskitarian</label>
+      </div>
+      <div class="form-group">
+        <input type="checkbox" id="glutenfree" name="diet_restrict" value="Gluten Free">
+        <label for="glutenfree">Gluten Free</label>
+      </div>
+      <div class="form-group"> 
+        <input type="checkbox" id="dairyfree" name="diet_restrict" value="Dairy Free">
+        <label for="dairyfree">Dairy Free</label>
+      </div>
+      <div class="form-group">
+        <input type="checkbox" id="shellfishfree" name="diet_restrict" value="Shellfish Free">
+        <label for="shellfishfree">Shellfish Free</label>
+      </div>
+      <div class="form-group">
+        <input type="checkbox" id="kosher" name="diet_restrict" value="Kosher">
+        <label for="kosher">Kosher</label>
+      </div>
+    </div>
+    <div class="addBtn form-btn">
+        <button type="submit">Add Recipe</button>
+    </div>
+</form>
+</div>

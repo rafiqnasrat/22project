@@ -1,0 +1,28 @@
+<ul class="user-list">
+  {{#each recipes as |recipe|}}
+  <li>
+    <article class="user-list">
+        <div class="username">
+            <a>Recipes for:{{user.username}}</a>
+        </div>
+        <div class="title">
+            <a>Recipe Title:{{recipe.title}}</a>
+        </div>
+        <div class="description">
+            <a>Description:{{recipe.description}}</a>
+        </div>
+        <div class="ingredients">
+            <a>Ingredients:{{recipe.ingredients}}</a>
+        </div>
+        <div class="instructions">
+            <a>Instructions:
+            {{post.instructions}}</a>
+        </div>
+        <div class="time">
+            <a>Time:
+            {{post.time}}</a>
+        </div>  
+    </article>
+  </li>
+  {{/each}}
+</ul>

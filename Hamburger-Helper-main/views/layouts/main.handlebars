@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hamburger Helper</title>
+  <link rel="stylesheet" href="/stylesheets/styles.css">
+</head>
+
+<body>
+  <div class="wrapper">
+    <header>
+      <h1>
+        <a href="/" class="logo">Hamburger Helper Recipe Forum</a>
+      </h1>
+      <nav>
+        {{#if loggedIn}}
+            <a href="/dashboard">dashboard</a>
+            <button id="logout" class="btn-no-style">logout</button>
+        {{else}}
+            <a href="/login"><span><ion-icon name="person-outline"></ion-icon></span> Login</a>
+            <a href="/signup"><span><ion-icon name="person-add-outline"></ion-icon></span> Sign Up</a>
+        {{/if}}
+      </nav>
+    </header>
+    <main>
+      {{{ body }}}
+    </main>
+
+  </div>
+
+
+
+</body>
+
+</html>
